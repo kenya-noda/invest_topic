@@ -11,9 +11,10 @@ import std_msgs.msg
 
 def callback(req):
     try:
+        time_sub = time.time()
         f = open("topic_check.txt", "a")
     
-        time_sub = time.time()
+        print(time_sub, req.data)
         time_hensa = str(time_sub - req.data)
 
         f.write(time_hensa + "\n")
@@ -29,8 +30,8 @@ if __name__=="__main__":
     
     topic_from = rospy.Subscriber(
             name = "topic_check",
-            data_class = std_msgs.msg.Float32,
-            callback = callback
+            data_class = std_msgs.msg.Float64,
+            callback = callback,
             queue_size = 1,
             )
 

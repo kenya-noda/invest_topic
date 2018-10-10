@@ -12,11 +12,13 @@ if __name__=="__main__":
 
     topic_to = rospy.Publisher(
             name = "topic_check",
-            data_class = std_msgs.msg.Float32,
-            latch = True
+            data_class = std_msgs.msg.Float64,
             queue_size = 1,
             )
     
     while not rospy.is_shutdown():
-        topic_to.publish(time.time())
+        t = time.time()
+        print(t)
+        topic_to.publish(t)
         time.sleep(0.01)
+        continue
