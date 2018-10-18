@@ -19,9 +19,9 @@ if __name__=="__main__":
     
     while not rospy.is_shutdown():
 
-        for pub in topic_to:
+        for num, pub in zip(numbers, topic_to):
             t = time.time()
-            print(t)
+            print(t, num)
             
             pub.publish(t)
 

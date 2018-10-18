@@ -8,19 +8,21 @@ import threading
 import rospy
 import std_msgs.msg
 
+d = "/home/amigos/data/"
+
 numbers = [i for i in range(10)]
 
 def callback(req, num):
     try:
-        time_sub = time.time()
-        f = open("topic_check_{}.txt".format(num), "a")
+        f = open(d + "topic_check_{}.txt".format(num), "a")
     
-        print(time_sub, req.data)
+        time_sub = time.time()
+        print(time_sub, req.data, num)
         time_hensa = str(time_sub - req.data)
 
         f.write(time_hensa + "\n")
         f.close()
-        time.sleep(10) # for sub multi test
+        time.sleep(1+num) # for sub multi test
     except KeyBoardInterrupt:
         f.close()
         sys.exit(-1)
