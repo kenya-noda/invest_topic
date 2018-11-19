@@ -17,7 +17,7 @@ def callback(req):
     print(time_sub, req.data)
     time_hensa = time_sub - req.data
     
-    n.write("topic_speed", '', "({}, {})".format(time_hensa, time_sub))
+    n.write("topic_speed", '', (time_hensa, time_sub), auto_commit=True)
     return
 
 if __name__=="__main__":
