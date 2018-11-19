@@ -15,10 +15,11 @@ if __name__=="__main__":
             data_class = std_msgs.msg.Float64,
             queue_size = 1,
             )
-    
-    while not rospy.is_shutdown():
+    i = 0
+    while i != 100:
         t = time.time()
         print(t)
         topic_to.publish(t)
-        time.sleep(0.01)
+        i += 1
+        time.sleep(1)
         continue

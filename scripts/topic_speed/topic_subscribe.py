@@ -7,25 +7,25 @@ import time
 import threading
 import rospy
 import std_msgs.msg
+sys.path.append("/home/amigos/python/n2lite/")
+import n2lite
 
-d = "/home/amigos/data/"
 
 def callback(req):
-    try:
-        time_sub = time.time()
-        print(time_sub, req.data)
-        time_hensa = str(time_sub - req.data)
-
-        f.write(time_hensa + "\n")
-    except KeyBoardInterrupt:
-        f.close()
-        sys.exit(-1)
+    time_sub = time.time()
+    
+    print(time_sub, req.data)
+    time_hensa = time_sub - req.data
+    
+    n.write("topic_speed", '', "({}, {})".format(time_hensa, time_sub))
     return
 
 if __name__=="__main__":
     rospy.init_node(name)
+    n = n2lite.N2lite("/home/amigos/data/topic_speed/topic_speed.db")
 
-    
+    n.make_table("topic_speed", "(dif float, time float)")
+
     topic_from = rospy.Subscriber(
             name = "topic_check",
             data_class = std_msgs.msg.Float64,
@@ -33,8 +33,4 @@ if __name__=="__main__":
             queue_size = 1,
             )
 
-    f = open(d + "topic_check.txt", "a")
-    
     rospy.spin()
-
-    f.close()
