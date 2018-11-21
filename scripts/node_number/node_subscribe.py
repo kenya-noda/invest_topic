@@ -1,36 +1,35 @@
 #! /usr/bin/env python3
 
-name = "topic_subscriber_number"
-
 import sys
 import time
-import threading
 import rospy
 import std_msgs.msg
 sys.path.append("/home/amigos/python/n2lite/")
 import n2lite
 
+args = sys.argv
+name = "node_subscriber{}".format(args[1])
+
 
 def callback(req):
     time_sub = time.time()
     
-    print(time_sub, req.data)
     time_hensa = time_sub - req.data
     
-    n.write("topic_number", '', (time_hensa, time_sub), auto_commit=True)
+    n.write("node_number{}".format(args[1]), '', (time_hensa, time_sub), auto_commit=True)
     return
 
 if __name__=="__main__":
     rospy.init_node(name)
-    n = n2lite.N2lite("/home/amigos/data/topic_speed/topic_number.db")
+    n = n2lite.N2lite("/home/amigos/data/multi_publisher/node_number.db")
 
-    n.make_table("topic_number", "(dif float, time float)")
+    n.make_table("node_nuber{}".format(args[1]), "(dif float, time float)")
 
-    topic_from = [rospy.Subscriber(
-            name = "topic_check_number{}".format(i),
+    topic_from = rospy.Subscriber(
+            name = "node_check",
             data_class = std_msgs.msg.Float64,
             callback = callback,
             queue_size = 1,
-            ) for i in range(1, 101)]
+            )
 
     rospy.spin()
