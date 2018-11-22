@@ -16,10 +16,10 @@ if __name__=="__main__":
             queue_size = 1,
             )
     i = 0
-    while i != 100:
+    while i != 1000:
         t = time.time()
         print(t)
         topic_to.publish(t)
         i += 1
-        time.sleep(1)
+        time.sleep(0.1)
         continue

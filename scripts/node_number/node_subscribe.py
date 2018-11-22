@@ -23,7 +23,7 @@ if __name__=="__main__":
     rospy.init_node(name)
     n = n2lite.N2lite("/home/amigos/data/multi_publisher/node_number.db")
 
-    n.make_table("node_nuber{}".format(args[1]), "(dif float, time float)")
+    n.make_table("node_number{}".format(args[1]), "(dif float, time float)")
 
     topic_from = rospy.Subscriber(
             name = "node_check",
