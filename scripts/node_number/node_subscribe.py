@@ -26,7 +26,7 @@ if __name__=="__main__":
     n.make_table("node_number{}".format(args[1]), "(dif float, time float)")
 
     topic_from = rospy.Subscriber(
-            name = "node_check",
+            name = "node_check{}".format(args[1]),
             data_class = std_msgs.msg.Float64,
             callback = callback,
             queue_size = 1,
