@@ -14,3 +14,77 @@
   <node name = "s1" type = "node_subscribe_ex.py" pkg = "invest_topic">
     <param name = "n" value = "1" />
   </node>
+
+  <node name = "p2" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "2" />
+  </node>
+
+  <node name = "s2" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "2" />
+  </node>
+
+  <node name = "p3" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "3" />
+  </node>
+
+  <node name = "s3" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "3" />
+  </node>
+
+  <node name = "p4" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "4" />
+  </node>
+
+  <node name = "s4" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "4" />
+  </node>
+
+  <node name = "p5" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "5" />
+  </node>
+
+  <node name = "s5" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "5" />
+  </node>
+
+  <node name = "p6" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "6" />
+  </node>
+
+  <node name = "s6" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "6" />
+  </node>
+
+  <node name = "p7" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "7" />
+  </node>
+
+  <node name = "s7" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "7" />
+  </node>
+
+  <node name = "p8" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "8" />
+  </node>
+
+  <node name = "s8" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "8" />
+  </node>
+
+  <node name = "p9" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "9" />
+  </node>
+
+  <node name = "s9" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "9" />
+  </node>
+
+  <node name = "p10" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "10" />
+  </node>
+
+  <node name = "s10" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "10" />
+  </node>
+
+</launch>
