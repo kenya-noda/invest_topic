@@ -1,0 +1,16 @@
+<launch>
+
+  <node name = "p0" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "0" />
+  </node>
+
+  <node name = "s0" type = "node_subscribe.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p1" type = "node_publish.py" pkg = "invest_topic">
+    <param name = "n" value = "1" />
+  </node>
+
+  <node name = "s1" type = "node_subscribe_ex.py" pkg = "invest_topic">
+    <param name = "n" value = "1" />
+  </node>
