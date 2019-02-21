@@ -1,0 +1,1209 @@
+<launch>
+
+  <node name = "p0" type = "node_publish_1.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s0" type = "node_subscribe_1.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p1" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s1" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p2" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s2" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p3" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s3" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p4" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s4" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p5" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s5" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p6" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s6" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p7" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s7" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p8" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s8" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p9" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s9" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p10" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s10" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p11" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s11" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p12" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s12" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p13" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s13" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p14" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s14" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p15" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s15" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p16" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s16" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p17" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s17" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p18" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s18" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p19" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s19" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p20" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s20" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p21" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s21" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p22" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s22" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p23" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s23" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p24" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s24" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p25" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s25" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p26" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s26" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p27" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s27" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p28" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s28" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p29" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s29" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p30" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s30" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p31" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s31" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p32" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s32" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p33" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s33" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p34" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s34" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p35" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s35" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p36" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s36" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p37" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s37" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p38" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s38" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p39" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s39" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p40" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s40" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p41" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s41" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p42" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s42" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p43" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s43" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p44" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s44" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p45" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s45" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p46" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s46" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p47" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s47" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p48" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s48" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p49" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s49" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p50" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s50" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p51" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s51" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p52" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s52" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p53" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s53" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p54" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s54" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p55" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s55" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p56" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s56" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p57" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s57" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p58" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s58" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p59" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s59" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p60" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s60" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p61" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s61" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p62" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s62" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p63" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s63" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p64" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s64" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p65" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s65" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p66" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s66" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p67" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s67" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p68" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s68" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p69" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s69" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p70" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s70" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p71" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s71" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p72" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s72" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p73" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s73" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p74" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s74" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p75" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s75" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p76" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s76" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p77" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s77" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p78" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s78" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p79" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s79" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p80" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s80" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p81" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s81" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p82" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s82" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p83" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s83" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p84" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s84" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p85" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s85" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p86" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s86" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p87" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s87" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p88" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s88" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p89" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s89" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p90" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s90" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p91" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s91" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p92" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s92" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p93" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s93" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p94" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s94" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p95" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s95" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p96" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s96" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p97" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s97" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p98" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s98" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p99" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s99" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p100" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s100" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p101" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s101" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p102" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s102" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p103" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s103" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p104" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s104" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p105" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s105" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p106" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s106" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p107" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s107" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p108" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s108" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p109" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s109" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p110" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s110" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p111" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s111" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p112" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s112" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p113" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s113" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p114" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s114" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p115" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s115" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p116" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s116" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p117" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s117" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p118" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s118" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p119" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s119" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p120" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s120" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p121" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s121" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p122" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s122" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p123" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s123" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p124" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s124" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p125" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s125" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p126" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s126" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p127" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s127" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p128" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s128" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p129" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s129" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p130" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s130" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p131" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s131" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p132" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s132" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p133" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s133" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p134" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s134" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p135" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s135" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p136" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s136" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p137" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s137" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p138" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s138" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p139" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s139" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p140" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s140" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p141" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s141" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p142" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s142" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p143" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s143" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p144" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s144" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p145" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s145" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p146" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s146" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p147" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s147" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p148" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s148" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p149" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s149" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p150" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s150" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p151" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s151" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p152" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s152" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p153" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s153" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p154" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s154" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p155" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s155" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p156" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s156" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p157" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s157" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p158" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s158" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p159" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s159" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p160" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s160" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p161" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s161" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p162" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s162" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p163" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s163" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p164" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s164" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p165" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s165" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p166" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s166" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p167" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s167" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p168" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s168" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p169" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s169" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p170" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s170" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p171" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s171" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p172" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s172" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p173" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s173" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p174" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s174" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p175" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s175" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p176" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s176" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p177" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s177" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p178" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s178" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p179" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s179" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p180" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s180" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p181" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s181" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p182" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s182" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p183" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s183" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p184" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s184" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p185" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s185" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p186" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s186" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p187" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s187" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p188" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s188" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p189" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s189" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p190" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s190" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p191" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s191" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p192" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s192" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p193" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s193" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p194" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s194" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p195" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s195" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p196" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s196" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p197" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s197" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p198" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s198" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p199" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s199" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "p200" type = "node_publish.py" pkg = "invest_topic">
+  </node>
+
+  <node name = "s200" type = "node_subscribe_ex.py" pkg = "invest_topic">
+  </node>
+
+</launch>
