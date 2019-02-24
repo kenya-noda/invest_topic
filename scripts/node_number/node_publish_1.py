@@ -15,6 +15,8 @@ if __name__=="__main__":
             queue_size = 1,
             )
 
+    time.sleep(10)
+
     while not rospy.is_shutdown():
         t = time.time()
         topic_to.publish(t)
