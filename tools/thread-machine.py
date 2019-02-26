@@ -15,6 +15,11 @@ topic_num = args.topic_num
 launch = ET.Element("launch")
 tree = ET.ElementTree(element=launch)
 
+ET.SubElement(launch, "machine",
+        {"name":"necst", "address":"necst", "env-loader":"/home/necst/ros/devel/env.sh",
+            "user":"necst", "password":"****"}
+        )
+
 ET.SubElement(launch, "node",
         {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
         )
@@ -31,7 +36,7 @@ ET.SubElement(node_p, "param",
         )
 
 node_s = ET.SubElement(launch, "node",
-        {"name":"s1", "type":"topic_subscribe.py", "pkg":"invest_topic"}
+        {"name":"s1", "type":"topic_subscribe.py", "pkg":"invest_topic", "machine":"necst"}
         )
 ET.SubElement(node_s, "param",
         {"name":"n", "value":"{}".format(topic_num-1)}
@@ -43,7 +48,7 @@ ET.SubElement(node_s, "param",
         ) for i in range(2, node_num)]
 
 [ET.SubElement(launch, "node",
-        {"name":"s{}".format(i), "type":"sloth_s.py", "pkg":"invest_topic"}
+    {"name":"s{}".format(i), "type":"sloth_s.py", "pkg":"invest_topic", "machine":"necst"}
         ) for i in range(2, node_num)]
 
 #tree.write("test.launch", encoding="utf-8")
