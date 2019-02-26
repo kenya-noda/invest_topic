@@ -11,7 +11,7 @@ def callback(req):
 if __name__=="__main__":
     rospy.init_node("subscriber")
     num = int(rospy.get_param("~n"))
-    n_node = int(rospy.get_param("~n_node")
+    n_node = int(rospy.get_param("~n_node"))
 
     topic_from = [rospy.Subscriber(
             name = "node_check{0}_{1}".format(n_node, i),
