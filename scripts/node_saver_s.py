@@ -8,16 +8,23 @@ sys.path.append("/home/amigos/python/n2lite/")
 import n2lite
 import psutil
 
-def callback(req):
-    time_sub = time.time()
-    time_hensa = time_sub - req.data
-    n.write("node_number", '', (time_hensa, time_sub), auto_commit=True)
 
+def callback(req):
     cpu = psutil.cpu_percent()
     mem = psutil.virtual_memory().percent
     nic = psutil.net_io_counters()
+    if cpu != 100.0:
+        n.write("status", '', (cpu, mem, nic.bytes_sent, nic.bytes_recv), auto_commit=True)
 
-    n.write("status", '', (cpu, mem, nic.bytes_sent, nic.bytes_recv), auto_commit=True)
+        time_sub = time.time()
+        time_hensa = time_sub - req.data
+        n.write("node_number", '', (time_hensa, time_sub), auto_commit=True)
+        
+        global count
+        count += 1
+        if count >=100:
+            print("end!!")
+    else: pass
     return
 
 if __name__=="__main__":
@@ -26,6 +33,8 @@ if __name__=="__main__":
 
     n.make_table("node_number", "(dif float, time float)")
     n.make_table("status", "(cpu float, mem float, send float, recv float)")
+
+    count = 0
 
     topic_from = rospy.Subscriber(
             name = "node_check0",

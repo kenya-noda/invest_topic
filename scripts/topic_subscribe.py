@@ -1,12 +1,8 @@
 #! /usr/bin/env python3
 
-import sys
 import time
 import rospy
 import std_msgs.msg
-sys.path.append("/home/amigos/python/n2lite/")
-import n2lite
-import psutil
 
 def callback(req):
     pass
