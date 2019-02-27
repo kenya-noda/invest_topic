@@ -10,6 +10,7 @@ def callback(req):
 
 if __name__=="__main__":
     rospy.init_node("subscriber")
+    num = rospy.get_param("~n")
 
     topic_from = [rospy.Subscriber(
             name = "node_check{}".format(i),

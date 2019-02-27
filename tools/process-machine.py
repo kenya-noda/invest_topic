@@ -17,15 +17,7 @@ tree = ET.ElementTree(element=launch)
 
 ET.SubElement(launch, "machine",
         {"name":"necst", "address":"necst", "env-loader":"/home/necst/ros/devel/env.sh",
-            "user":"necst", "password":"****"}
-        )
-
-ET.SubElement(launch, "node",
-        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
-        )
-
-ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen"}
+            "user":"necst", "password":"t10Nante"}
         )
 
 for i in range(1, node_num+1):
@@ -48,6 +40,14 @@ for i in range(1, node_num+1):
     ET.SubElement(node_s, "param",
             {"name":"n", "value":"{}".format(topic_num)}
             )
+
+ET.SubElement(launch, "node",
+        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
+        )
+
+ET.SubElement(launch, "node",
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen"}
+        )
 
 #tree.write("test.launch", encoding="utf-8")
 tree.write("/home/amigos/ros/src/invest_topic/launch/process{0}_{1}.launch".format(node_num, topic_num), encoding="utf-8")

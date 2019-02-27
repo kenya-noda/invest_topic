@@ -13,17 +13,23 @@ def callback(req):
     cpu = psutil.cpu_percent()
     mem = psutil.virtual_memory().percent
     nic = psutil.net_io_counters()
-    if cpu != 100.0:
-        n.write("status", '', (cpu, mem, nic.bytes_sent, nic.bytes_recv), auto_commit=True)
+    global flag
 
-        time_sub = time.time()
-        time_hensa = time_sub - req.data
-        n.write("node_number", '', (time_hensa, time_sub), auto_commit=True)
-        
-        global count
-        count += 1
-        if count >=100:
-            print("end!!")
+    if cpu != 100.0:
+        if not flag:
+            n.write("status", '', (cpu, mem, nic.bytes_sent, nic.bytes_recv), auto_commit=True)
+
+            time_sub = time.time()
+            time_hensa = time_sub - req.data
+            n.write("node_number", '', (time_hensa, time_sub), auto_commit=True)
+            
+            global count
+            count += 1
+            if count >=100:
+                flag = True
+                print("end!!")
+        else:
+            print("end!")
     else: pass
     return
 
@@ -35,6 +41,7 @@ if __name__=="__main__":
     n.make_table("status", "(cpu float, mem float, send float, recv float)")
 
     count = 0
+    flag = False
 
     topic_from = rospy.Subscriber(
             name = "node_check0",
