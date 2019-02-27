@@ -35,8 +35,8 @@ def callback(req):
 
 if __name__=="__main__":
     rospy.init_node("subscriber")
-    node = rospy.get_param("node")
-    topic = rospy.get_param("topic")
+    node = rospy.get_param("~node")
+    topic = rospy.get_param("~topic")
 
     n = n2lite.N2lite("/home/amigos/data/multi_publisher/node_number{}_{}.db".format(node, topic))
 
