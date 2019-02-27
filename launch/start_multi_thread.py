@@ -12,4 +12,4 @@ for node in node_list:
         run_cmd = cmd.format(node, topic)
         run = subprocess.check_call(run_cmd.split())
         print(run_cmd, run)
-        time.sleep(5)
+        time.sleep(2)

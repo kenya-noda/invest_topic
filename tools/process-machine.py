@@ -16,8 +16,8 @@ launch = ET.Element("launch")
 tree = ET.ElementTree(element=launch)
 
 ET.SubElement(launch, "machine",
-        {"name":"necst", "address":"necst", "env-loader":"/home/necst/ros/devel/env.sh",
-            "user":"necst", "password":"t10Nante"}
+        {"name":"necserver", "address":"necserver", "env-loader":"/home/amigos/ros/devel/env.sh",
+            "user":"amigos", "password":"NakaY0s1"}
         )
 
 for i in range(1, node_num+1):
@@ -32,7 +32,7 @@ for i in range(1, node_num+1):
             )
 
     node_s = ET.SubElement(launch, "node",
-            {"name":"s{}".format(i), "type":"process_subscribe.py", "pkg":"invest_topic", "machine":"necst"}
+            {"name":"s{}".format(i), "type":"process_subscribe.py", "pkg":"invest_topic", "machine":"necserver"}
             )
     ET.SubElement(node_s, "param",
             {"name":"n_node", "value":"{}".format(i)}
@@ -42,11 +42,11 @@ for i in range(1, node_num+1):
             )
 
 ET.SubElement(launch, "node",
-        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
+        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic", "machine":"necserver"}
         )
 
 save = ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "machine":"necst", "required":"true"}
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "required":"true"}
         )
 ET.SubElement(save, "param",
         {"name":"topic", "value":"{}".format(topic_num)}

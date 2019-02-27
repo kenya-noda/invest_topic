@@ -16,8 +16,8 @@ launch = ET.Element("launch")
 tree = ET.ElementTree(element=launch)
 
 ET.SubElement(launch, "machine",
-        {"name":"necst", "address":"necst", "env-loader":"/home/necst/ros/devel/env.sh",
-            "user":"necst", "password":"t10Nante"}
+        {"name":"necserver", "address":"necserver", "env-loader":"/home/amigos/ros/devel/env.sh",
+            "user":"amigos", "password":"NakaY0s1"}
         )
 
 node_p = ET.SubElement(launch, "node",
@@ -28,7 +28,7 @@ ET.SubElement(node_p, "param",
         )
 
 node_s = ET.SubElement(launch, "node",
-        {"name":"s1", "type":"topic_subscribe.py", "pkg":"invest_topic", "machine":"necst"}
+        {"name":"s1", "type":"topic_subscribe.py", "pkg":"invest_topic", "machine":"necserver"}
         )
 ET.SubElement(node_s, "param",
         {"name":"n", "value":"{}".format(topic_num-1)}
@@ -40,15 +40,15 @@ ET.SubElement(node_s, "param",
         ) for i in range(2, node_num)]
 
 [ET.SubElement(launch, "node",
-    {"name":"s{}".format(i), "type":"sloth_s.py", "pkg":"invest_topic", "machine":"necst"}
+    {"name":"s{}".format(i), "type":"sloth_s.py", "pkg":"invest_topic", "machine":"necserver"}
         ) for i in range(2, node_num)]
 
 ET.SubElement(launch, "node",
-        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
+        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic", "machine":"necserver"}
         )
 
 save = ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "machine":"necst", "required":"true"}
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen","required":"true"}
         )
 ET.SubElement(save, "param",
         {"name":"topic", "value":"{}".format(topic_num)}
