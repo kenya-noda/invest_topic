@@ -15,14 +15,6 @@ topic_num = args.topic_num
 launch = ET.Element("launch")
 tree = ET.ElementTree(element=launch)
 
-ET.SubElement(launch, "node",
-        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
-        )
-
-ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen"}
-        )
-
 for i in range(1, node_num+1):
     node_p = ET.SubElement(launch, "node",
             {"name":"p{}".format(i), "type":"process_publish.py", "pkg":"invest_topic"}
@@ -43,6 +35,20 @@ for i in range(1, node_num+1):
     ET.SubElement(node_s, "param",
             {"name":"n", "value":"{}".format(topic_num)}
             )
+
+ET.SubElement(launch, "node",
+        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
+        )
+
+save = ET.SubElement(launch, "node",
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen"}
+        )
+ET.SubElement(save, "param",
+        {"name":"topic", "value":"{}".format(topic_num)}
+        )
+ET.SubElement(save, "param",
+        {"name":"node", "value":"{}".format(node_num)}
+        )
 
 #tree.write("test.launch", encoding="utf-8")
 tree.write("/home/amigos/ros/src/invest_topic/launch/process{0}_{1}.launch".format(node_num, topic_num), encoding="utf-8")

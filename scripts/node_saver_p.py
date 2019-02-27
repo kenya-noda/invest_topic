@@ -15,7 +15,7 @@ if __name__=="__main__":
             queue_size = 1,
             )
 
-    time.sleep(12)
+    time.sleep(2)
 
     while not rospy.is_shutdown():
         t = time.time()

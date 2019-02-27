@@ -47,8 +47,14 @@ ET.SubElement(launch, "node",
         {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
         )
 
-ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen"}
+save = ET.SubElement(launch, "node",
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "machine":"necst"}
+        )
+ET.SubElement(save, "param",
+        {"name":"topic", "value":"{}".format(topic_num)}
+        )
+ET.SubElement(save, "param",
+        {"name":"node", "value":"{}".format(node_num)}
         )
 
 #tree.write("test.launch", encoding="utf-8")
