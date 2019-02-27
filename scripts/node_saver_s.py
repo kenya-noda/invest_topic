@@ -28,6 +28,7 @@ def callback(req):
             if count >=100:
                 flag = True
                 print("end!!")
+                rospy.signal_shutdown("end")
         else:
             print("end!")
     else: pass
