@@ -43,7 +43,7 @@ ET.SubElement(launch, "node",
         )
 
 save = ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen"}
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "required":"true"}
         )
 ET.SubElement(save, "param",
         {"name":"topic", "value":"{}".format(topic_num)}

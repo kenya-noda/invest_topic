@@ -46,7 +46,7 @@ ET.SubElement(launch, "node",
         )
 
 save = ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "machine":"necst"}
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "machine":"necst", "required":"true"}
         )
 ET.SubElement(save, "param",
         {"name":"topic", "value":"{}".format(topic_num)}
@@ -56,4 +56,4 @@ ET.SubElement(save, "param",
         )
 
 #tree.write("test.launch", encoding="utf-8")
-tree.write("/home/amigos/ros/src/invest_topic/launch/process{0}_{1}.launch".format(node_num, topic_num), encoding="utf-8")
+tree.write("/home/amigos/ros/src/invest_topic/launch/multiprocess{0}_{1}.launch".format(node_num, topic_num), encoding="utf-8")
