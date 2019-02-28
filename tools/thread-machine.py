@@ -44,7 +44,11 @@ ET.SubElement(node_s, "param",
         ) for i in range(2, node_num)]
 
 ET.SubElement(launch, "node",
-        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic", "machine":"necserver"}
+        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
+        )
+
+ET.SubElement(launch, "node",
+        {"name":"r", "type":"node_return.py", "pkg":"invest_topic", "machine":"necserver"}
         )
 
 save = ET.SubElement(launch, "node",

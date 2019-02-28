@@ -10,7 +10,7 @@ if __name__=="__main__":
     rospy.init_node("publisher")
 
     topic_to = rospy.Publisher(
-            name = "node_check0",
+            name = "node_check",
             data_class = std_msgs.msg.Float64,
             queue_size = 1,
             )
