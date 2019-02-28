@@ -61,4 +61,4 @@ ET.SubElement(save, "param",
         )
 
 #tree.write("test.launch", encoding="utf-8")
-tree.write("/home/amigos/ros/src/invest_topic/launch/msg{0}_{1}_{2}.launch".format(node_num, topic_num, msg), encoding="utf-8")
+tree.write("/home/amigos/ros/src/invest_topic/launch/msg{0}_{1}.launch".format(node_num, topic_num), encoding="utf-8")
