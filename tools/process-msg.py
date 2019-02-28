@@ -47,11 +47,11 @@ for i in range(1, node_num+1):
             )
 
 ET.SubElement(launch, "node",
-        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic"}
+        {"name":"p0", "type":"node_saver_p.py", "pkg":"invest_topic", "machine":"necserver"}
         )
 
 save = ET.SubElement(launch, "node",
-        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "machine":"necst", "required":"true"}
+        {"name":"s0", "type":"node_saver_s.py", "pkg":"invest_topic", "output":"screen", "required":"true"}
         )
 ET.SubElement(save, "param",
         {"name":"topic", "value":"{}".format(topic_num)}
@@ -61,4 +61,4 @@ ET.SubElement(save, "param",
         )
 
 #tree.write("test.launch", encoding="utf-8")
-tree.write("/home/amigos/ros/src/invest_topic/launch/msg{0}_{1}.launch".format(node_num, topic_num), encoding="utf-8")
+tree.write("/home/amigos/ros/src/invest_topic/launch/msg{0}_{1}_{2}.launch".format(node_num, topic_num, msg), encoding="utf-8")
