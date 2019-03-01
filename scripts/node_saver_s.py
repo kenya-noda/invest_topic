@@ -18,11 +18,10 @@ def callback(req):
 
     if cpu != 100.0:
         if not flag:
-            n.write("status", '', (cpu, mem, nic.bytes_sent, nic.bytes_recv), auto_commit=True)
-
             time_hensa = (time_sub - req.data)/2.
             n.write("node_number", '', (time_hensa, time_sub), auto_commit=True)
-            
+
+            n.write("status", '', (cpu, mem, nic.bytes_sent, nic.bytes_recv), auto_commit=True)
             global count
             count += 1
             if count >=100:
