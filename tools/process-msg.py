@@ -6,12 +6,10 @@ import argparse
 p = argparse.ArgumentParser()
 p.add_argument("--node_num", type=int)
 p.add_argument("--topic_num", type=int)
-p.add_argument("--msg", type=str)
 args = p.parse_args()
 
 node_num = args.node_num
 topic_num = args.topic_num
-msg = args.msg
 
 
 launch = ET.Element("launch")
@@ -31,9 +29,6 @@ for i in range(1, node_num+1):
             )
     ET.SubElement(node_p, "param",
             {"name":"n", "value":"{}".format(topic_num)}
-            )
-    ET.SubElement(node_p, "param",
-            {"name":"msg", "value":"{}".format(msg)}
             )
 
     node_s = ET.SubElement(launch, "node",

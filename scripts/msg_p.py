@@ -10,7 +10,8 @@ if __name__=="__main__":
     rospy.init_node("publisher")
     num = int(rospy.get_param("~n"))
     n_node = int(rospy.get_param("~n_node"))
-    st = str(rospy.get_param("~msg"))
+    byt = ["1"]*8
+    st = "".join(byt)
 
     topic_to = [rospy.Publisher(
             name = "node_check{0}_{1}".format(n_node, i),
