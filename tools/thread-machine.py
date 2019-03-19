@@ -17,7 +17,7 @@ tree = ET.ElementTree(element=launch)
 
 ET.SubElement(launch, "machine",
         {"name":"necserver", "address":"necserver", "env-loader":"/home/amigos/ros/devel/env.sh",
-            "user":"amigos", "password":"NakaY0s1"}
+            "user":"amigos", "password":"********"}
         )
 
 node_p = ET.SubElement(launch, "node",
